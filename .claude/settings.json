@@ -1,0 +1,26 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(npm uninstall @next/font lucide-react)",
+      "PowerShell(npm install lucide-react@latest 2>&1)",
+      "PowerShell(npm run build 2>&1)",
+      "PowerShell(npm run dev 2>&1)",
+      "Bash(sleep 6 && cat /c/Users/jorge/AppData/Local/Temp/claude/c--Users-jorge-OneDrive-Escritorio-cafeteria2/c89d7818-573c-4fb1-996a-62ab514fddff/tasks/b20i1ej8k.output)",
+      "Read(//c/Users/jorge/AppData/Local/Temp/claude/c--Users-jorge-OneDrive-Escritorio-cafeteria2/c89d7818-573c-4fb1-996a-62ab514fddff/tasks/**)",
+      "PowerShell(try { $r = Invoke-WebRequest -Uri \"http://localhost:3000\" -UseBasicParsing -TimeoutSec 30; \"STATUS: $\\($r.StatusCode\\), LENGTH: $\\($r.Content.Length\\)\" } catch { \"ERROR: $_\" })",
+      "PowerShell($r = Invoke-WebRequest -Uri \"http://localhost:3000\" -UseBasicParsing; $html = $r.Content; @\\(\"Crafted\", \"quiet design\", \"Geisha\", \"Ámbar\", \"Madrid\", \"Cold Brew\", \"Origen\", \"Tueste\", \"Reservar\", \"Yirgacheffe\"\\) | ForEach-Object { \"{0,-20} -> {1}\" -f $_, $html.Contains\\($_\\) })",
+      "PowerShell($r = Invoke-WebRequest -Uri \"http://localhost:3000\" -UseBasicParsing -TimeoutSec 30 2>&1; \"STATUS: $\\($r.StatusCode\\)\")",
+      "PowerShell(cd \"c:\\\\Users\\\\jorge\\\\OneDrive\\\\Escritorio\\\\cafeteria2\"; ls node_modules | Where-Object { $_.Name -eq \"critters\" } | Select-Object Name)",
+      "PowerShell($r = Invoke-WebRequest -Uri \"http://localhost:3000\" -UseBasicParsing; $r.Content | Select-String \"Error|error|__NEXT_DATA__|_next/static\" -AllMatches | Select-Object -First 20)",
+      "PowerShell(node -e \"console.log\\(require\\('./node_modules/framer-motion/package.json'\\).version\\)\")",
+      "PowerShell($r = Invoke-WebRequest -Uri \"http://localhost:3000\" -UseBasicParsing; $cssLink = [regex]::Match\\($r.Content, 'href=\"\\(/_next/static/chunks/[^\"]+\\\\.css\\)\"'\\).Groups[1].Value; Write-Output \"CSS: $cssLink\")",
+      "PowerShell($css = Invoke-WebRequest -Uri \"http://localhost:3000/_next/static/chunks/%5Broot-of-the-server%5D__0u117~3._.css\" -UseBasicParsing; $c = $css.Content; \"Length: $\\($c.Length\\)\"; $c | Select-String \"bone-100|espresso-900|fraunces|--color\" -AllMatches | Select-Object -First 10)",
+      "PowerShell($css = \\(Invoke-WebRequest -Uri \"http://localhost:3000/_next/static/chunks/%5Broot-of-the-server%5D__0u117~3._.css\" -UseBasicParsing\\).Content; $hasBone = $css.Contains\\(\"--color-bone-100\"\\); $hasEspresso = $css.Contains\\(\"--color-espresso\"\\); $hasFont = $css.Contains\\(\"font-display\"\\); Write-Output \"bone tokens: $hasBone | espresso: $hasEspresso | font-display util: $hasFont\")",
+      "PowerShell($css = \\(Invoke-WebRequest -Uri \"http://localhost:3000/_next/static/chunks/%5Broot-of-the-server%5D__0u117~3._.css\" -UseBasicParsing\\).Content; $idx = $css.IndexOf\\(\"--font-mono\"\\); $css.Substring\\([Math]::Max\\(0, $idx-100\\), [Math]::Min\\(400, $css.Length - $idx\\)\\))",
+      "PowerShell($css = \\(Invoke-WebRequest -Uri \"http://localhost:3000/_next/static/chunks/%5Broot-of-the-server%5D__0u117~3._.css\" -UseBasicParsing\\).Content; $idx = $css.IndexOf\\(\"--font-mono:\", 500\\); $css.Substring\\([Math]::Max\\(0, $idx-50\\), 300\\))",
+      "PowerShell($css = \\(Invoke-WebRequest -Uri \"http://localhost:3000/_next/static/chunks/%5Broot-of-the-server%5D__0u117~3._.css\" -UseBasicParsing\\).Content; $hasPySection = $css.Contains\\(\"py-section\"\\); $hasSection = $css.Contains\\(\"section\"\\); Write-Output \"py-section class generated: $hasPySection\"; $css | Select-String \"py-section|spacing-section\" | Select-Object -First 5)",
+      "PowerShell($css = \\(Invoke-WebRequest -Uri \"http://localhost:3000/_next/static/chunks/%5Broot-of-the-server%5D__0u117~3._.css\" -UseBasicParsing\\).Content; @\\(\"text-display-2xl\",\"text-display-xl\",\"text-display-lg\",\"font-display\",\"font-body\",\"font-mono\",\"container-edge\",\"editorial-eyebrow\",\"bg-bone\",\"bg-espresso\"\\) | ForEach-Object { \"$_ : $\\($css.Contains\\($_\\)\\)\" })",
+      "PowerShell(New-Item -ItemType Directory -Force \"c:\\\\Users\\\\jorge\\\\OneDrive\\\\Escritorio\\\\cafeteria2\\\\.github\\\\workflows\")"
+    ]
+  }
+}
